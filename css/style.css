@@ -270,3 +270,42 @@ nav {
         grid-area: img;
     }
 }
+
+
+/* Portfolio */
+
+
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__subtitle--work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio__item {
+    background-color: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__img {
+    transition: 
+        transform 750ms ease-in-out,
+        opacity 250ms linear;
+}
+
+.portfolio__img:hover {
+    transform: scale(1.2);
+    opacity: 0.75;
+}
