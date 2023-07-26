@@ -134,10 +134,11 @@ h3 { font-size: var(--fs-h3);}
 header {
     display: flex;
     justify-content: space-between;
+    padding: 1em;
 }
 
 .logo {
-    width: 200px;
+    max-width: 200px;
 }
 
 .nav {
@@ -178,6 +179,48 @@ header {
 .nav__link:hover {
     color: var(--clr-accent);
 }
+
+
+/* Hamburger */
+
+.hamburger {
+
+    display: block;
+    position: relative;
+}
+
+.nav-toggle {
+    padding: 0.5em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 999;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background-color: var(--clr-dark);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250em ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px}
+.hamburger::after { bottom: 6px}
+
 
 
 /* Intro Section */
