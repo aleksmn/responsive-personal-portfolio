@@ -42,6 +42,10 @@
 
 /* General styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -200,9 +204,6 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
-
-
 
 
 /* Hamburger */
