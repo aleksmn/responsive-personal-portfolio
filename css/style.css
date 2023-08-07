@@ -133,7 +133,10 @@ h3 { font-size: var(--fs-h3);}
 }
 
 
-/* header */
+
+
+
+/************** header ***************/
 
 header {
     display: flex;
@@ -248,7 +251,7 @@ header {
 
 
 
-/* Intro Section */
+/************* Intro Section *************/
 
 .intro {
     position: relative;
@@ -333,9 +336,14 @@ header {
         margin: 0 auto;
     }
 
-    .service + .service {
-        margin-left: 2em;
+    .service {
+        margin: 0 1em;
+        /* border: 1px solid red; */
     }
+
+    /* .service + .service {
+        margin-left: 2em;
+    } */
 }
 
 
