@@ -259,6 +259,9 @@ header {
 
 .intro__img {
     box-shadow: var(--box-shadow);
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .section__subtitle--intro {
@@ -281,10 +284,11 @@ header {
     .intro__img {
         grid-area: img;
         min-width: 250px;
+        height: auto;
     }
 
     .section__subtitle--intro {
-        align-self: start;
+        align-self: end;
         grid-column: -1 / 1;
         grid-row: 2;
         text-align: right;
@@ -306,6 +310,9 @@ header {
     color: var(--clr-light);
     text-align: center;
 }
+
+
+
 
 .section__title--services {
     color: var(--clr-accent);
@@ -340,8 +347,8 @@ header {
         margin: 0 1em;
         /* border: 1px solid red; */
     }
-
-    /* .service + .service {
+/* 
+    .service + .service {
         margin-left: 2em;
     } */
 }
