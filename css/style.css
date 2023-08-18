@@ -349,16 +349,19 @@ header {
     }
 
     .service {
-        margin: 0 1em;
+        margin: 0 0.5em;
         /* border: 1px solid red; */
+        width:33%;
     }
-/* 
-    .service + .service {
+
+    /* .service + .service {
         margin-left: 2em;
     } */
 }
 
 
+
+/* About section */
 
 .about-me {
     max-width: 1000px;
