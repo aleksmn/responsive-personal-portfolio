@@ -108,7 +108,7 @@ h2 { font-size: var(--fs-h2);}
 h3 { font-size: var(--fs-h3);}
 
 .section__title {
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
 }
 
 .section__title--intro {
@@ -124,12 +124,12 @@ h3 { font-size: var(--fs-h3);}
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--intro {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     padding: .25em 1em;
+    width: fit-content;
 }
 
 
@@ -253,9 +253,7 @@ header {
 
 /************* Intro Section *************/
 
-.intro {
-    position: relative;
-}
+
 
 .intro__img {
     box-shadow: var(--box-shadow);
@@ -264,9 +262,7 @@ header {
     object-fit: cover;
 }
 
-.section__subtitle--intro {
-    width: fit-content;
-}
+/* Медиазапросы для большого экрана */
 
 @media (min-width: 600px) {
     .intro {
@@ -288,7 +284,7 @@ header {
     }
 
     .section__subtitle--intro {
-        align-self: end;
+        align-self: baseline;
         grid-column: -1 / 1;
         grid-row: 2;
         text-align: right;
@@ -298,6 +294,15 @@ header {
         z-index: -1;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 /* Services section */
