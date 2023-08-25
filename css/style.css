@@ -447,8 +447,8 @@ header {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
-    font-size: var(--fs-h3);
+    padding: 1.2em 0;
+    font-size: var(--fs-h2);
 }
 
 .footer a {
@@ -473,12 +473,12 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 0.8em 0 0;
     padding: 0;
 }
 
 .social-list__item {
-    margin: 0 0.8em;
+    margin: 0 0.4em;
 }
 
 .social-list__link {
