@@ -431,6 +431,8 @@ header {
 }
 
 .portfolio__img {
+    object-fit: cover;
+
     transition: 
         transform 750ms ease-in-out,
         opacity 250ms linear;
