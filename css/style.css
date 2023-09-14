@@ -486,3 +486,32 @@ header {
 .social-list__link {
     padding: 0.5em;
 }
+
+
+/* Для узких экранов */
+
+@media screen and (max-width: 420px) {
+    :root {
+        --fs-h1: 2rem;
+        --fs-h2: 1.25rem;
+        --fs-h3: 1.1rem;
+        --fs-body: 0.9rem;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .logo {
+        max-width: 140px;
+    }
+    
+    .footer {
+        font-size: var(--fs-h3);
+    }
+
+    .portfolio {
+        grid-template-columns: auto;
+    }
+
+}
