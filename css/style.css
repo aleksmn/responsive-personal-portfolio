@@ -70,6 +70,7 @@ strong {
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
+    z-index: 1;
 }
 
 /* Buttons */
@@ -388,17 +389,18 @@ header {
     }
 
     .section__subtitle--about {
-        grid-column: 1/ -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        z-index: -1;
-        padding-left: 1em;
+        grid-area: subtitle;
+        color: var(--clr-accent);
+        font-weight: var(--fw-bold);
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
 
     .about-me__img {
         grid-area: img;
+        object-fit: cover;
+        width: 200px;
+        height: 400px;
     }
 }
 
@@ -444,7 +446,7 @@ header {
 }
 
 
-
+/*  Footer  */
 .footer {
     background: #111;
     color: var(--clr-accent);
